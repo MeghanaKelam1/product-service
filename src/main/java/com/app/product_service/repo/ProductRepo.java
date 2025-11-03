@@ -14,5 +14,7 @@ public interface ProductRepo extends JpaRepository<Product,Long> {
 //    InventoryDTO findByName(String productName);
 
     Optional<Product> findByProductName(String productName);
+//    Optional<Product> findByProductNameIgnoreCase(String productName);
 
+//    <T> ScopedValue<T> findByProductName(String name);
 }
